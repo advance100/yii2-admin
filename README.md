@@ -26,6 +26,11 @@ php composer.phar require mdmsoft/yii2-admin "~1.0"
 或
 php composer.phar require mdmsoft/yii2-admin "~2.0"
 ```
+在win7下安装，如
+```
+项目根路径>composer require mdmsoft/yii2-admin "~2.0"
+如: D:\1_web\2015_yii2_study>composer require mdmsoft/yii2-admin "~2.0"
+```
 
 或安装dev-master版本
 
