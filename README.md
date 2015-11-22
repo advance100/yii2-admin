@@ -17,34 +17,34 @@ RBAC Manager for Yii 2
 
 ### 使用Composer安装
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+建议使用[composer](http://getcomposer.org/download/)安装.
 
-Either run
+如下
 
 ```
 php composer.phar require mdmsoft/yii2-admin "~1.0"
-or
+或
 php composer.phar require mdmsoft/yii2-admin "~2.0"
 ```
 
-or for the dev-master
+或安装dev-master版本
 
 ```
 php composer.phar require mdmsoft/yii2-admin "2.x-dev"
 ```
 
-Or, you may add
+或者，将下面加到
 
 ```
 "mdmsoft/yii2-admin": "~2.0"
 ```
 
-to the require section of your `composer.json` file and execute `php composer.phar update`.
+`composer.json` 文件的require部分并执行 `php composer.phar update`.
 
 ### 使用压缩包安装
 
-Download the latest release from here [releases](https://github.com/mdmsoft/yii2-admin/releases), then extract it to your project.
-In your application config, add the path alias for this extension.
+从[releases](https://github.com/mdmsoft/yii2-admin/releases)下载最新版本,解压缩到你的项目中.
+在应用配置中，添加扩展的路径别名.
 
 ```php
 return [
@@ -93,8 +93,8 @@ return [
     ],
 ];
 ```
-See [Yii RBAC](http://www.yiiframework.com/doc-2.0/guide-security-authorization.html#role-based-access-control-rbac) for more detail.
-You can then access Auth manager through the following URL:
+详细请看 [Yii RBAC](http://www.yiiframework.com/doc-2.0/guide-security-authorization.html#role-based-access-control-rbac) .
+可以通过下面的url访问Auth manager:
 
 ```
 http://localhost/path/to/index.php?r=admin
@@ -105,12 +105,12 @@ http://localhost/path/to/index.php?r=admin/role
 http://localhost/path/to/index.php?r=admin/assignment
 ```
 
-To use the menu manager (optional), execute the migration here:
+如果使用菜单管理器(可选)，执行数据迁移:
 ```
 yii migrate --migrationPath=@mdm/admin/migrations
 ```
 
-If you use database (class 'yii\rbac\DbManager') to save rbac data, execute the migration here:
+如果你使用数据库(class 'yii\rbac\DbManager') 保存 rbac数据, 执行数据迁移:
 ```
 yii migrate --migrationPath=@yii/rbac/migrations
 ```
@@ -173,7 +173,7 @@ To do that, change them via `controllerMap` property. For example:
         The default value is 'id'.
     - **usernameField** User name field of your User model  
         The default value is 'username'.
-- Optional properties
+- 可选属性
     - **fullnameField** The field that specifies the full name of the user used in "view" page.  
         This can either be a field of the user model or of a related model (e.g. profile model).  
         When the field is of a related model, the name should be specified with a dot-separated notation (e.g. 'profile.full_name').  
@@ -187,10 +187,10 @@ To do that, change them via `controllerMap` property. For example:
         The default value is null.
 
 
-Customizing Layout
+自定义布局
 ------------------
 
-By default, the admin module will use the layout specified in the application level.
+默认, admin模块使用的是应用级的布局文件.
 In that case you have to write the menu for this module on your own.
 
 By specifying the `layout` property, you can use one of the built-in layouts of the module:
