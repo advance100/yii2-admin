@@ -1,7 +1,7 @@
 RBAC Manager for Yii 2
 ======================
 
-Documentation
+文档
 -------------
 > **Important: If you install version 3.x, please see [this readme](https://github.com/mdmsoft/yii2-admin/blob/3.master/README.md#upgrade-from-2x).**
 
