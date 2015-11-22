@@ -41,7 +41,7 @@ Or, you may add
 
 to the require section of your `composer.json` file and execute `php composer.phar update`.
 
-### Install From the Archive
+### 使用压缩包安装
 
 Download the latest release from here [releases](https://github.com/mdmsoft/yii2-admin/releases), then extract it to your project.
 In your application config, add the path alias for this extension.
