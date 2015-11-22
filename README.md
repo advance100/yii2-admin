@@ -12,10 +12,10 @@ RBAC Manager for Yii 2
 - [Using Menu](docs/guide/using-menu.md).
 - [Api](http://mdmsoft.github.io/yii2-admin/index.html).
 
-Installation
+安装
 ------------
 
-### Install With Composer
+### 使用Composer安装
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -57,10 +57,10 @@ return [
 ];
 ```
 
-Usage
+用法
 -----
 
-Once the extension is installed, simply modify your application configuration as follows:
+当扩展安装好后，只需按以下简单修改应用配置如下:
 
 ```php
 return [
@@ -115,7 +115,7 @@ If you use database (class 'yii\rbac\DbManager') to save rbac data, execute the 
 yii migrate --migrationPath=@yii/rbac/migrations
 ```
 
-Customizing Assignment Controller
+自定Assignment控制器
 ---------------------------------
 
 Assignment controller properties may need to be adjusted to the User model of your app.
@@ -165,7 +165,7 @@ To do that, change them via `controllerMap` property. For example:
 
 ```
 
-- Required properties
+- 必需的属性
     - **userClassName** Fully qualified class name of your User model  
         Usually you don't need to specify it explicitly, since the module will detect it automatically
     - **idField** ID field of your User model  
@@ -241,4 +241,4 @@ You can do it by specifying the `mainLayout` property with the application's mai
     ],
 ```
 
-[screenshots](https://picasaweb.google.com/105012704576561549351/Yii2Admin?authuser=0&feat=directlink)
+[截屏](https://picasaweb.google.com/105012704576561549351/Yii2Admin?authuser=0&feat=directlink)
